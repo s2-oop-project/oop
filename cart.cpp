@@ -4,7 +4,6 @@
 
 using namespace std;
 
-// create an empty cart object
 cart::cart(){
 	i=0;
 }                        
