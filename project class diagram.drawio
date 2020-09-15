@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-15T07:20:18.181Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="LYZJqRizEFmE31pHPiJM" version="13.7.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-15T07:21:57.561Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="zar9tMjwJ-PbieXfK2kW" version="13.6.6" type="github">
   <diagram id="yWoye2Kw_H8vIAHeB6Sl" name="Page-1">
-    <mxGraphModel dx="1940" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1202" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -40,7 +40,7 @@
         <mxCell id="uwrhguTHplQGWkpkG8sg-11" value="user" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="-130" y="360" width="160" height="368" as="geometry" />
         </mxCell>
-        <mxCell id="uwrhguTHplQGWkpkG8sg-12" value="string name;&#xa;int.     age;&#xa;string address;&#xa;int   phone number;&#xa;string sexual;&#xa;string password;&#xa;int   Id;&#xa;int   max_book_rent_num;&#xa;int   current_book_rent;&#xa;book   book_rent_list;&#xa;string email;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uwrhguTHplQGWkpkG8sg-11" vertex="1">
+        <mxCell id="uwrhguTHplQGWkpkG8sg-12" value="string user_name;&#xa;int.     user_age;&#xa;string user_address;&#xa;int   user_phone;&#xa;string user_sex;&#xa;string password;&#xa;int   Id;&#xa;int   max_book_rent_num;&#xa;int   current_book_rent;&#xa;book   book_rent_list;&#xa;string email;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uwrhguTHplQGWkpkG8sg-11" vertex="1">
           <mxGeometry y="26" width="160" height="194" as="geometry" />
         </mxCell>
         <mxCell id="uwrhguTHplQGWkpkG8sg-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uwrhguTHplQGWkpkG8sg-11" vertex="1">
