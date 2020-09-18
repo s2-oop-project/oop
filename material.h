@@ -5,7 +5,6 @@
 #ifndef MATERIAL_H
 #define MATERIAL_H
 #include<string>
-#include<vector>
 using namespace std;
 
 class material{
