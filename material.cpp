@@ -1,3 +1,6 @@
+//initialize as material name: none ,actor name : none  situation true means available to rent
+
+
 #include<iostream>
 #include<string>
 #include"material.h"
@@ -24,10 +27,10 @@ bool material::get_situation(){
     return situation;
 }
 
-void material::borrow_book(){
+void material::borrow_material(){
     situation=false;
 }
-void material::return_book(){
+void material::return_material(){
     situation=true;
 }
 

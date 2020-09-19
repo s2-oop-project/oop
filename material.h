@@ -12,8 +12,8 @@ class material{
 public:
     material();
     void set_up(string Material_name,string Autor_name);
-    void borrow_book();
-    void return_book();
+    void borrow_material();
+    void return_material();
     string get_material_name();
     string get_autor_name();
     bool get_situation();
