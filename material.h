@@ -1,4 +1,5 @@
-//this is an abstract class for material include:
+//this is the h file for material class include:
+//    material(abstract)
 //    book
 //    ebook
 //    DVD
@@ -24,3 +25,43 @@ public:
     bool situation;
 };
 #endif
+
+// this sub-class is for ebook
+class Ebook:public material
+{
+public:
+    Ebook();
+    void set_page_number(int Page);
+    void download();
+    int get_page_num();
+    int get_download_count();
+    
+    
+    int page_num;
+    int download_count;
+
+};
+
+
+
+// this sub-class is for book
+class book:public material
+{
+public:
+    book();
+    void set_page_number(int Page);
+    int get_page_num();
+    
+    int page_num;
+};
+
+//this sub-class is for DVD
+class DVD:public material
+{
+public:
+    DVD();
+    void set_length(int Len);
+    int get_length();
+    
+    int length;
+};
