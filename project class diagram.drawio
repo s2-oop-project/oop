@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-21T03:31:07.441Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="YZpls7qhF0CXCjA2Vk9K" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-21T03:33:19.310Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="x8rqbc98Pyu7FCCkQd8f" version="13.6.6" type="github">
   <diagram id="yWoye2Kw_H8vIAHeB6Sl" name="Page-1">
     <mxGraphModel dx="3106" dy="1987" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -532,11 +532,36 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="tB-2je2DjggVqDnVulLr-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="tB-2je2DjggVqDnVulLr-67" target="tB-2je2DjggVqDnVulLr-87" parent="1">
+        <mxCell id="tB-2je2DjggVqDnVulLr-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tB-2je2DjggVqDnVulLr-67" target="tB-2je2DjggVqDnVulLr-89">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="530" y="2534" />
-              <mxPoint x="530" y="2815" />
+              <mxPoint x="530" y="2855" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tB-2je2DjggVqDnVulLr-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tB-2je2DjggVqDnVulLr-67" target="tB-2je2DjggVqDnVulLr-91">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="2534" />
+              <mxPoint x="530" y="3165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tB-2je2DjggVqDnVulLr-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tB-2je2DjggVqDnVulLr-67" target="tB-2je2DjggVqDnVulLr-93">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="2534" />
+              <mxPoint x="530" y="2948" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tB-2je2DjggVqDnVulLr-96" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tB-2je2DjggVqDnVulLr-67" target="tB-2je2DjggVqDnVulLr-95">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="2534" />
+              <mxPoint x="530" y="3050" />
+              <mxPoint x="590" y="3050" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -607,7 +632,19 @@
           <mxGeometry x="1190" y="2200" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="tB-2je2DjggVqDnVulLr-87" value="leave" style="html=1;" vertex="1" parent="1">
-          <mxGeometry x="580" y="2790" width="110" height="50" as="geometry" />
+          <mxGeometry x="580" y="3140" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tB-2je2DjggVqDnVulLr-89" value="add book" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="585" y="2830" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tB-2je2DjggVqDnVulLr-91" value="leave" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="3140" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tB-2je2DjggVqDnVulLr-93" value="delete book" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="2930" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tB-2je2DjggVqDnVulLr-95" value="check history" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="3030" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
