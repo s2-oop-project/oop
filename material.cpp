@@ -7,36 +7,42 @@
 #include<iostream>
 #include<string>
 #include"material.h"
+#include<vector>
 
 using namespace std;
 material::material(){
     material_name="none";
-    autor_name="none";
+    author_name="none";
     situation=true;
 }
 
-void material::set_up(string Material_name,string Autor_name){
+void material::set_up(string Material_name,string Author_name){
     situation=true;
     material_name=Material_name;
-    autor_name=Autor_name;
+    author_name=Author_name;
 }
 string material::get_material_name(){
     return material_name;
 }
-string material::get_autor_name(){
-    return autor_name;
+string material::get_author_name(){
+    return author_name;
 }
 bool material::get_situation(){
     return situation;
 }
 
-void material::borrow_material(){
+void material::borrow_material(string borrow_user){
     situation=false;
+    borrow_user_list.push_back(borrow_user);
+    
 }
 void material::return_material(){
     situation=true;
 }
 
+vector<string> material::get_borrow_user_list(){
+    return borrow_user_list;
+}
 
 //ebook
 Ebook::Ebook():material()

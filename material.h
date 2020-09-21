@@ -6,23 +6,26 @@
 #ifndef MATERIAL_H
 #define MATERIAL_H
 #include<string>
+#include<vector>
 using namespace std;
 
 class material{
     // methods of materials
 public:
     material();
-    void set_up(string Material_name,string Autor_name);
-    void borrow_material();
+    void set_up(string Material_name,string Author_name);
+    void borrow_material(string borrow_user);
     void return_material();
     string get_material_name();
-    string get_autor_name();
+    string get_author_name();
     bool get_situation();
+    vector<string> get_borrow_user_list();
 
     // attribute of materials
     string material_name;
-    string autor_name;
+    string author_name;
     bool situation;
+    vector<string> borrow_user_list;
 };
 #endif
 
