@@ -70,7 +70,7 @@ vector<DVD> add_DVD(vector<DVD> DVD_collection){
     DVD new_DVD;
     new_DVD.set_up(Material_name,Author_name);
     new_DVD.set_length(Len);
-    cout<<endl<<endl<<endl<<"successfully added DVD:"<<endl<<"DVD name:"<<new_DVD.material_name<<endl<<"DVD author:"<<new_DVD         .author_name<<endl<<"Length of DVD:"<<new_DVD.length<<endl<<endl<<"——————————————————————————————————————————————"<<endl;
+    cout<<endl<<endl<<endl<<"successfully added DVD:"<<endl<<"DVD name:"<<new_DVD.material_name<<endl<<"DVD author:"<<new_DVD.author_name<<endl<<"Length of DVD:"<<new_DVD.length<<endl<<endl<<"——————————————————————————————————————————————"<<endl;
     DVD_collection.push_back(new_DVD);
     return DVD_collection;
 }
