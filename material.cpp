@@ -30,7 +30,6 @@ string material::get_author_name(){
 bool material::get_situation(){
     return situation;
 }
-
 void material::borrow_material(string borrow_user){
     situation=false;
     borrow_user_list.push_back(borrow_user);
@@ -44,6 +43,9 @@ vector<string> material::get_borrow_user_list(){
     return borrow_user_list;
 }
 
+
+
+
 //ebook
 Ebook::Ebook():material()
 {
@@ -52,17 +54,15 @@ Ebook::Ebook():material()
     download_count=0;
 }
 
-void Ebook::download(){
-    download_count+=1;
-}
-
 void Ebook::set_page_number(int Page){
     page_num=Page;
 }
 int Ebook::get_page_num(){
     return page_num;
 }
-
+void Ebook::borrow_material(string borrow_user){
+    download_count+=1;
+}
 int Ebook::get_download_count(){
     return download_count;
 }
@@ -75,6 +75,10 @@ book::book():material()
 {
 
     page_num=0;
+}
+void book::borrow_material(string borrow_user){
+    situation=false;
+    borrow_user_list.push_back(borrow_user);
 }
 
 void book::set_page_number(int Page){
@@ -89,6 +93,10 @@ int book::get_page_num(){
 DVD::DVD():material()
 {
     length=0;
+}
+void DVD::borrow_material(string borrow_user){
+    situation=false;
+    borrow_user_list.push_back(borrow_user);
 }
 void DVD::set_length(int Len){
     length=Len;
