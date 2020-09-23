@@ -27,7 +27,7 @@ vector<Ebook> add_ebook(vector<Ebook> Ebook_collection){
     cout<<"Input the title of your Ebook: ";
     getline(cin, Material_name);
     cout<<"Input author's name:";
-    cin>>Author_name;
+    getline(cin, Author_name);
     cout<<"Please enter the number of pages: ";
     cin>>Page;
     Ebook new_ebook;
@@ -45,7 +45,7 @@ vector<book> add_book(vector<book> book_collection){
     cout<<"Input the title of your book: ";
     getline(cin, Material_name);
     cout<<"input author's name:";
-    cin>>Author_name;
+    getline(cin, Author_name);
     cout<<"how many page are there in the book:";
     cin>>Page;
     book new_book;
@@ -64,7 +64,7 @@ vector<DVD> add_DVD(vector<DVD> DVD_collection){
     cout<<"Input your DVD's name:";
     getline(cin, Material_name);
     cout<<"Input the director's name:";
-    cin>>Author_name;
+    getline(cin, Author_name);
     cout<<"What is the runtime of the DVD? ";
     cin>>Len;
     DVD new_DVD;
