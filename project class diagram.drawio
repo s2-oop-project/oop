@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-23T04:06:20.051Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="bHXgObevd09mcgcRI5_L" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-23T08:25:10.048Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="WctpWhFjjGn-5ovPkKnE" version="13.6.6" type="github">
   <diagram id="yWoye2Kw_H8vIAHeB6Sl" name="Page-1">
-    <mxGraphModel dx="4565" dy="2432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3692" dy="2151" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -864,13 +864,37 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LRJxunevWv7tbJzIMOUY-11" value="building the hole library material and user" style="html=1;" vertex="1" parent="1">
-          <mxGeometry x="-760" y="1880" width="220" height="60" as="geometry" />
+          <mxGeometry x="-830" y="1880" width="290" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LRJxunevWv7tbJzIMOUY-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LRJxunevWv7tbJzIMOUY-15" target="tB-2je2DjggVqDnVulLr-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LRJxunevWv7tbJzIMOUY-15" value="while leave = true&amp;nbsp;&lt;br&gt;back to log in system" style="html=1;" vertex="1" parent="1">
           <mxGeometry x="-480" y="2230" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRJxunevWv7tbJzIMOUY-28" value="ask behavior " style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1799" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="LRJxunevWv7tbJzIMOUY-29" value="using: switch : 4 behaviour" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LRJxunevWv7tbJzIMOUY-28">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LRJxunevWv7tbJzIMOUY-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="LRJxunevWv7tbJzIMOUY-28">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="LRJxunevWv7tbJzIMOUY-31" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LRJxunevWv7tbJzIMOUY-28">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LRJxunevWv7tbJzIMOUY-32" value="borrow book ,DVD" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1450" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="LRJxunevWv7tbJzIMOUY-33" value="input: user borrow list " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LRJxunevWv7tbJzIMOUY-32">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LRJxunevWv7tbJzIMOUY-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="LRJxunevWv7tbJzIMOUY-32">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="LRJxunevWv7tbJzIMOUY-35" value="output: void " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LRJxunevWv7tbJzIMOUY-32">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
