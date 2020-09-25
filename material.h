@@ -16,6 +16,8 @@ public:
     void set_up(string Material_name,string Author_name);
     virtual void borrow_material(string borrow_user)=0;
     void return_material();
+    
+    
     string get_material_name();
     string get_author_name();
     bool get_situation();
@@ -35,7 +37,7 @@ class Ebook:public material
 public:
     Ebook();
     void set_page_number(int Page);
-    virtual void borrow_material(string borrow_user);
+    void borrow_material(string borrow_user);
     int get_page_num();
     int get_download_count();
     
@@ -52,7 +54,7 @@ class book:public material
 {
 public:
     book();
-    virtual void borrow_material(string borrow_user);
+    void borrow_material(string borrow_user);
     void set_page_number(int Page);
     int get_page_num();
     
@@ -67,7 +69,7 @@ class DVD:public material
 {
 public:
     DVD();
-    virtual void borrow_material(string borrow_user);
+    void borrow_material(string borrow_user);
     void set_length(int Len);
     int get_length();
     
