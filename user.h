@@ -19,6 +19,7 @@ public:
     void set_up_account();
     void change_user_password();
     void list_book_borrow();
+    void list_DVD_borrow();
 //borrow material
     void book_borrow(book borrow_book);
     void DVD_borrow(DVD borrow_DVD);

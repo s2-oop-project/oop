@@ -40,8 +40,18 @@ void user::set_up_account(){
 
 //book borrow
 void user::list_book_borrow(){
+    cout << "The list of book(s) you borrowed" << endl;
+
     for(int i=0;i<current_borrow;i++){
         cout<<mybook[i].get_material_name()<<endl;
+    }
+}
+
+//DVD borrow
+void user::list_DVD_borrow(){
+    cout << "The list of DVD(s) you borrowed" << endl;
+    for(int i=0; i<current_borrow; i++){
+        cout << myDVD[i].get_material_name() << endl;
     }
 }
 
@@ -117,28 +127,53 @@ void user::return_material(){
             int book_choose;
             
             //list the book
-            cout<<"This is the list of book you borrow:"<<endl;
+            cout<<"This is the list of book(s) you borrowed:"<<endl;
             for (int i=0;i<book_count;i++){
                     cout<<i+1<<"  "<<mybook[i].get_material_name()<<endl;
                 }
             
-            //ask user to choose which book want to return
-            cout<<"Enter the number of book you want to return :"<<endl;
+            //ask the user to choose which book the user wants to return
+            cout<<"Enter the book number you want to return : "<<endl;
             cin>>book_choose;
             book_choose-=1;
-            //show that user return success
-            cout<<"sucessfully return book:"<<endl<<mybook[book_choose].get_material_name()<<endl;
+            //show that the user return it successfully
+            cout<<"successfully return book:"<<endl<<mybook[book_choose].get_material_name()<<endl;
             current_borrow-=1;
+
             //return material function
             mybook[book_choose].return_material();
             
-            //move all element up 1 to cover the one user delete.
+            //move all elements up 1 to cover the one that the user deleted.
             for (int i = book_choose;i<current_borrow;i++){
                 mybook[i]=mybook[i+1];
             }
-            
+        //user return DVD;
         }else{
-            //user return DVD;(Kay's part)
+            //DVD index to let user choose
+            int DVD_choose;
+
+            //list the DVDs
+            cout << "This is the list of DVD(s) you borrowed" << endl;
+            for(int i=0; i<DVD_count; i++){
+                cout << i+1 << "  " << myDVD[i].get_material_name() << endl;
+            }
+
+            //ask the user to choose which DVD the user wants to return
+            cout << "Enter the DVD number you want to return : " << endl;
+            cin >> DVD_choose;
+            DVD_choose -= 1;
+
+            //show that the user return it successfully
+            cout << "successfully return DVD:" << endl << myDVD[DVD_choose].get_material_name() << endl;
+            current_borrow -= 1;
+
+            //return material function
+            myDVD[DVD_choose].return_material();
+
+            //move all element up 1 to cover the one that the user deleted
+            for(int i=DVD_choose; i<current_borrow; i++){
+                myDVD[i] = myDVD[i+1];
+            }
         }
     }
 }
