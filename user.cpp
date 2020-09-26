@@ -36,6 +36,7 @@ void user::set_up_account(){
     cout<<"Good morning "<<user_name<<",Please set your password:"<<endl;
     cin>>user_password;
     cout<<"Successfully create account:"<<endl<<"user ID: "<<user_ID<<endl<<"user name: "<<user_name<<endl<<"user password: "<<user_password<<endl;
+    cin.ignore();
 }
 
 //book borrow

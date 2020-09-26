@@ -23,28 +23,27 @@ int user_log_in(vector<user> user_list){
     while (find_ID == false){
         cout<<"please enter your ID:"<<endl<<"If you want to cancel log in, please enter -1"<<endl;
         cin>>user_input_ID;
-        if (user_input_ID== -1){
+        
+        cout<<user_input_ID;
+        if (user_input_ID == -1){
             return -1;
         }
         //check the user vector 1 by 1
-        while(check_index < user_list.size() ){
-            //if not fix ID
-            if(user_input_ID != user_list[check_index].get_user_ID()){
-                check_index+=1;
-                
-            }else{
-                
-                //if fix ID
-                my_user=user_list[check_index];
-                find_ID=true;
-            }
+        while (check_index < user_list.size() ){
+                if( user_list[check_index].get_user_ID() == user_input_ID){
+                    my_user=user_list[check_index];
+                    find_ID=true;
+                }else{
+                    check_index+=1;
+                }
         }
-        //can't find password
-        if(find_ID==false){
-            cout<<"can't find such ID , please enter again."<<endl;
+        if(find_ID== false){
+            cout<<"we did not found this user, please enter your ID again."<<endl;
+            cin.ignore();
         }
     }
-    
+
+        
     
     string input_password;
     cout<<"Hi! "<< my_user.get_user_name()<<" , please enter your password: "<<endl<<"if you want to cancel log in , please enter (cancel)."<<endl;
