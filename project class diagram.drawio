@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-27T16:10:46.879Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="fP8k_4ghaEMTLsgRJ4e4" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-29T05:38:36.190Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="rKXaYmc2b4RS2PPsYh0G" version="13.6.6" type="github">
   <diagram id="yWoye2Kw_H8vIAHeB6Sl" name="Page-1">
-    <mxGraphModel dx="1973" dy="1660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2281" dy="1660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -547,7 +547,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="fIxqtCCqVrPdru4cecPg-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tB-2je2DjggVqDnVulLr-67" target="tB-2je2DjggVqDnVulLr-87" edge="1">
+        <mxCell id="fIxqtCCqVrPdru4cecPg-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="szC6jJ1HnHfBu5lr4hmS-12" target="tB-2je2DjggVqDnVulLr-87" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="414" y="2639" as="targetPoint" />
             <Array as="points">
@@ -907,6 +907,31 @@
         </mxCell>
         <mxCell id="szC6jJ1HnHfBu5lr4hmS-5" value="&lt;p class=&quot;p1&quot; style=&quot;margin: 0px ; font-stretch: normal ; font-size: 11px ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34; ; color: rgb(66 , 184 , 224) ; background-color: rgb(24 , 23 , 27)&quot;&gt;user&lt;span class=&quot;s1&quot; style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;::&lt;/span&gt;return_material&lt;span class=&quot;s1&quot; style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;()&lt;/span&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="550" y="1754" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="szC6jJ1HnHfBu5lr4hmS-6" value="&lt;p class=&quot;p1&quot; style=&quot;margin: 0px ; font-stretch: normal ; font-size: 11px ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34; ; color: rgb(66 , 184 , 224) ; background-color: rgb(24 , 23 , 27)&quot;&gt;user&lt;span class=&quot;s1&quot; style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;::&lt;/span&gt;return_material&lt;span class=&quot;s1&quot; style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;()&lt;/span&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="2550" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="szC6jJ1HnHfBu5lr4hmS-7" value="&lt;p class=&quot;p1&quot; style=&quot;margin: 0px ; font-stretch: normal ; font-size: 11px ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34; ; color: rgb(255 , 255 , 255) ; background-color: rgb(24 , 23 , 27)&quot;&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(66 , 184 , 224)&quot;&gt;vector&lt;/span&gt;&amp;lt;Ebook&amp;gt; &lt;span class=&quot;s1&quot; style=&quot;color: rgb(66 , 184 , 224)&quot;&gt;add_ebook&lt;/span&gt;(vector&amp;lt;Ebook&amp;gt; Ebook_collection)&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="2790" width="410" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="szC6jJ1HnHfBu5lr4hmS-8" value="&lt;p class=&quot;p1&quot; style=&quot;margin: 0px ; font-stretch: normal ; font-size: 11px ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34; ; color: rgb(255 , 255 , 255) ; background-color: rgb(24 , 23 , 27)&quot;&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(66 , 184 , 224)&quot;&gt;vector&lt;/span&gt;&amp;lt;Ebook&amp;gt; &lt;span class=&quot;s1&quot; style=&quot;color: rgb(66 , 184 , 224)&quot;&gt;delete_ebook&lt;/span&gt;(vector&amp;lt;Ebook&amp;gt; Ebook_collection, string delete_Ebook_name){&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="3030" width="630" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="szC6jJ1HnHfBu5lr4hmS-10" value="&lt;p class=&quot;p1&quot; style=&quot;margin: 0px ; font-stretch: normal ; font-size: 11px ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34; ; color: rgb(255 , 255 , 255) ; background-color: rgb(24 , 23 , 27)&quot;&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(252 , 107 , 170)&quot;&gt;&lt;b&gt;void&lt;/b&gt;&lt;/span&gt; &lt;span class=&quot;s2&quot; style=&quot;color: rgb(66 , 184 , 224)&quot;&gt;user&lt;/span&gt;::&lt;span class=&quot;s2&quot; style=&quot;color: rgb(66 , 184 , 224)&quot;&gt;book_borrow&lt;/span&gt;(book borrow_book){&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="435" y="1540" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="szC6jJ1HnHfBu5lr4hmS-11" value="3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="444" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="szC6jJ1HnHfBu5lr4hmS-12" value="3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="2820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="szC6jJ1HnHfBu5lr4hmS-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tB-2je2DjggVqDnVulLr-67" target="szC6jJ1HnHfBu5lr4hmS-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1485" y="3700" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint x="469" y="2534" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
