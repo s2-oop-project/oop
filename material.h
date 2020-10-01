@@ -16,7 +16,7 @@ public:
     void set_up(string Material_name,string Author_name);
     virtual void borrow_material(string borrow_user)=0;
     void return_material();
-    
+    virtual void check_history();
     
     string get_material_name();
     string get_author_name();
@@ -41,7 +41,6 @@ public:
     int get_page_num();
     int get_download_count();
     
-    
     int page_num;
     int download_count;
     
@@ -57,7 +56,7 @@ public:
     void borrow_material(string borrow_user);
     void set_page_number(int Page);
     int get_page_num();
-    
+    void check_history();
     int page_num;
 };
 
@@ -72,7 +71,7 @@ public:
     void borrow_material(string borrow_user);
     void set_length(int Len);
     int get_length();
-    
+    void check_history();
     int length;
 };
 #endif

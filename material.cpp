@@ -26,16 +26,15 @@ void material::set_up(string Material_name,string Author_name){
     material_name=Material_name;
     author_name=Author_name;
 }
-//change of material class when someone borrow the book
-void material::borrow_material(string borrow_user){
-    situation=false;
-    borrow_user_list.push_back(borrow_user);
-    
-}
+
 //change of material when it return
 void material::return_material(){
     situation=true;
 }
+
+
+
+
 
 //get behavior
 string material::get_material_name(){
@@ -93,11 +92,6 @@ int Ebook::get_download_count(){
 
 
 
-
-
-
-
-
 //book
 book::book():material()
 {
@@ -141,3 +135,10 @@ int DVD::get_length(){
     return length;
 }
 
+void DVD::check_history(){
+    for(int i=0;i<borrow_user_list.size();i++){
+        cout<<"This is the people list who borrow this DVD before:";
+        cout<<borrow_user_list[i]<<endl;
+    }
+    cout<<"___________________________________"<<endl;
+}
