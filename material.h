@@ -9,14 +9,19 @@
 #include<vector>
 using namespace std;
 
+
+
+
 class material{
     // methods of materials
 public:
     material();
-    void set_up(string Material_name,string Author_name);
+    virtual void test_use_material_setup(string t_name,string t_author);
+    virtual void check_history();
     virtual void borrow_material(string borrow_user)=0;
     void return_material();
-    virtual void check_history();
+    void set_up(string Material_name,string Author_name);
+
     
     string get_material_name();
     string get_author_name();
@@ -31,11 +36,17 @@ public:
 };
 
 
+
+
+
+
 // this sub-class is for ebook
 class Ebook:public material
 {
 public:
+    
     Ebook();
+    void test_use_material_setup(string t_name,string t_author);
     void set_page_number(int Page);
     void borrow_material(string borrow_user);
     int get_page_num();
@@ -53,10 +64,12 @@ class book:public material
 {
 public:
     book();
+    void test_use_material_setup(string t_name,string t_author);
     void borrow_material(string borrow_user);
     void set_page_number(int Page);
     int get_page_num();
     void check_history();
+    
     int page_num;
 };
 
@@ -68,10 +81,13 @@ class DVD:public material
 {
 public:
     DVD();
+    void test_use_material_setup(string t_name,string t_author);
     void borrow_material(string borrow_user);
     void set_length(int Len);
     int get_length();
     void check_history();
+    
+    
     int length;
 };
 #endif

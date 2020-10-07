@@ -16,6 +16,7 @@ class user
 public:
 //behavior
     user() ;
+    void test_use_user_setup(string q_name,string q_password);
     void set_up_account();
     void change_user_password();
     void list_book_borrow();

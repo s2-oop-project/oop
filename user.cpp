@@ -16,7 +16,26 @@ using namespace std;
 int user::ID=0;
 
 user::user(){
-    
+}
+
+
+//use to quick set up user for test
+void user::test_use_user_setup(string q_name,string q_password){
+    user_ID=100+ID;
+    ID+=1;
+    maximum_borrow=5;
+    current_borrow=0;
+    book_count=0;
+    DVD_count=0;
+    mybook = new book [maximum_borrow];
+    myDVD = new DVD [maximum_borrow];
+    user_name=q_name;
+    user_password=q_password;
+}
+
+
+//for setting account
+void user::set_up_account(){
     user_ID=100+ID;
     ID+=1;
     maximum_borrow=5;
@@ -26,17 +45,14 @@ user::user(){
     mybook = new book [maximum_borrow];
     myDVD = new DVD [maximum_borrow];
     
-}
-
-
-//quick link for setting account
-void user::set_up_account(){
     cout<<"Welcome ! Please enter your name:"<<endl;
     getline(cin,user_name);
     cout<<"Good morning "<<user_name<<",Please set your password:"<<endl;
     cin>>user_password;
     cout<<"Successfully create account:"<<endl<<"user ID: "<<user_ID<<endl<<"user name: "<<user_name<<endl<<"user password: "<<user_password<<endl;
     cin.ignore();
+    
+    
 }
 
 //book borrow
@@ -59,7 +75,7 @@ void user::change_user_password(){
         cin>> user_password;
     }
     cout<<"Successfully change your password to : "<<user_password;
-    de
+    
 }
 
 
@@ -88,6 +104,10 @@ void user::DVD_borrow(DVD borrow_DVD){
         cout<<"you reach your borrow maximum,please return material before you borrow"<<endl;
     }
 }
+
+
+
+
 
 
 //return material
@@ -130,8 +150,6 @@ void user::return_material(){
             //show that user return success
             cout<<"sucessfully return book:"<<endl<<mybook[book_choose].get_material_name()<<endl;
             current_borrow-=1;
-            //return material function
-            mybook[book_choose].return_material();
             
             //move all element up 1 to cover the one user delete.
             for (int i = book_choose;i<current_borrow;i++){
@@ -140,9 +158,29 @@ void user::return_material(){
             
         }else{
             //user return DVD;(Kay's part)
+            int DVD_choose;
+            
+            //list the book
+            cout<<"This is the list of DVD you borrow:"<<endl;
+            for (int i=0;i<book_count;i++){
+                    cout<<i+1<<"  "<<myDVD[i].get_material_name()<<endl;
+                }
+            
+            //ask user to choose which book want to return
+            cout<<"Enter the number of DVD you want to return :"<<endl;
+            cin>>DVD_choose;
+            DVD_choose-=1;
+            //show that user return success
+            cout<<"sucessfully return DVD:"<<endl<<myDVD[DVD_choose].get_material_name()<<endl;
+            current_borrow-=1;
+            
+            
         }
     }
 }
+
+
+
 
 
 

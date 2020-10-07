@@ -46,7 +46,7 @@ int main(){
 
 
     user2.return_material();
-    user2.list_DVD_borrow();
+    user2.list_book_borrow();
 
     return 0;
 }

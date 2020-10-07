@@ -31,6 +31,20 @@ void material::set_up(string Material_name,string Author_name){
 void material::return_material(){
     situation=true;
 }
+void material::borrow_material(string borrow_user){
+    
+}
+
+void material::check_history(){
+    
+}
+
+void material::test_use_material_setup(string t_name,string t_author){
+    
+}
+
+
+
 
 
 
@@ -67,6 +81,13 @@ Ebook::Ebook():material()
     download_count=0;
 }
 
+void Ebook::test_use_material_setup(string t_name,string t_author){
+    material_name=t_name;
+    author_name=t_author;
+    situation=true;
+    page_num=55;
+    download_count=55;
+}
 
 void Ebook::set_page_number(int Page){
     page_num=Page;
@@ -98,6 +119,16 @@ book::book():material()
 
     page_num=0;
 }
+
+
+void book::test_use_material_setup(string t_name,string t_author){
+    material_name=t_name;
+    author_name=t_author;
+    situation=true;
+    page_num=55;
+}
+
+
 void book::set_page_number(int Page){
     page_num=Page;
 }
@@ -112,6 +143,13 @@ int book::get_page_num(){
     return page_num;
 }
 
+void book::check_history(){
+    for(int i=0;i<borrow_user_list.size();i++){
+        cout<<"This is the people list who borrow this book before:";
+        cout<<borrow_user_list[i]<<endl;
+    }
+    cout<<"___________________________________"<<endl;
+}
 
 
 
@@ -125,6 +163,14 @@ DVD::DVD():material()
 void DVD::set_length(int Len){
     length=Len;
 }
+
+void DVD::test_use_material_setup(string t_name,string t_author){
+    material_name=t_name;
+    author_name=t_author;
+    situation=true;
+    length=55;
+}
+
 //when someone borrow DVD
 void DVD::borrow_material(string borrow_user){
     situation=false;
