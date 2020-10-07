@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" modified="2020-10-07T02:54:24.573Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="MCrh5h23txcUpbNluWyd" version="13.7.7" type="github">
+  <diagram id="Nc_HaYb2nLWXnIW4EYDa" name="Page-1">
+    <mxGraphModel dx="4177" dy="4000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mmAnfptPewkA3ip-ifj4-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mmAnfptPewkA3ip-ifj4-37" target="mmAnfptPewkA3ip-ifj4-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mmAnfptPewkA3ip-ifj4-37" target="mmAnfptPewkA3ip-ifj4-56" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-37" value="library" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-40" value="user" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="-130" y="410" width="350" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-41" value="    int user_ID;&#xa;    int maximum_borrow;&#xa;    int current_borrow;&#xa;    string user_password;&#xa;    string user_name;&#xa;    int book_count;&#xa;    int DVD_count;&#xa;    book * mybook;&#xa;    DVD * myDVD;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-40" vertex="1">
+          <mxGeometry y="26" width="350" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-40" vertex="1">
+          <mxGeometry y="160" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-43" value="    void test_use_user_setup(string q_name,string q_password);&#xa;    void set_up_account();&#xa;    void change_user_password();&#xa;    void list_book_borrow();&#xa;    void book_borrow(book borrow_book);&#xa;    void DVD_borrow(DVD borrow_DVD);&#xa;    void return_material();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-40" vertex="1">
+          <mxGeometry y="168" width="350" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-46" value="staff" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="790" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-47" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-46" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-48" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-46" vertex="1">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-49" value="void add_book();&#xa;void check_history" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-46" vertex="1">
+          <mxGeometry y="60" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.486;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="mmAnfptPewkA3ip-ifj4-43" target="mmAnfptPewkA3ip-ifj4-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-51" value="public" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="790" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-52" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-51" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-53" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-51" vertex="1">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-54" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-51" vertex="1">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.486;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="mmAnfptPewkA3ip-ifj4-43" target="mmAnfptPewkA3ip-ifj4-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.451;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="mmAnfptPewkA3ip-ifj4-62" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="474.8571428571429" y="1302" as="sourcePoint" />
+            <mxPoint x="-19.999999999999545" y="1432" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.483;exitY=1.032;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="mmAnfptPewkA3ip-ifj4-59" target="mmAnfptPewkA3ip-ifj4-70" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="645" y="1312" as="sourcePoint" />
+            <mxPoint x="895.6000000000004" y="1431.7000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mmAnfptPewkA3ip-ifj4-59" target="mmAnfptPewkA3ip-ifj4-66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="472" y="1312" />
+              <mxPoint x="457" y="1312" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-66" value="book" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="282" y="1432" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-67" value="int page_num;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-66" vertex="1">
+          <mxGeometry y="26" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-68" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-66" vertex="1">
+          <mxGeometry y="52" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-69" value="    void test_use_material_setup(string t_name,string t_author);&#xa;    void borrow_material(string borrow_user);&#xa;    void set_page_number(int Page);&#xa;    int get_page_num();&#xa;    void check_history();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-66" vertex="1">
+          <mxGeometry y="60" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-56" value="material" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="282" y="1100" width="380" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-57" value="    string material_name;&#xa;    string author_name;&#xa;    bool situation;&#xa;    vector&lt;string&gt; borrow_user_list;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-56" vertex="1">
+          <mxGeometry y="26" width="380" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-58" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-56" vertex="1">
+          <mxGeometry y="110" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-59" value="    virtual void test_use_material_setup(string t_name,string t_author);&#xa;    virtual void check_history();&#xa;    virtual void borrow_material(string borrow_user)=0;&#xa;    void return_material();&#xa;    void set_up(string Material_name,string Author_name);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-56" vertex="1">
+          <mxGeometry y="118" width="380" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-62" value="ebook" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="1430" width="350" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-63" value="    int page_num;&#xa;    int download_count;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-62" vertex="1">
+          <mxGeometry y="26" width="350" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-64" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-62" vertex="1">
+          <mxGeometry y="60" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-65" value="    void test_use_material_setup(string t_name,string t_author);&#xa;    void set_page_number(int Page);&#xa;    void borrow_material(string borrow_user);&#xa;    int get_page_num();&#xa;    int get_download_count();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-62" vertex="1">
+          <mxGeometry y="68" width="350" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-70" value="DVD" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="750" y="1446" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-71" value=" int length;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-70" vertex="1">
+          <mxGeometry y="26" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-72" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-70" vertex="1">
+          <mxGeometry y="52" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mmAnfptPewkA3ip-ifj4-73" value="    void test_use_material_setup(string t_name,string t_author);&#xa;    void borrow_material(string borrow_user);&#xa;    void set_length(int Len);&#xa;    int get_length();&#xa;    void check_history();&#xa;    " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mmAnfptPewkA3ip-ifj4-70" vertex="1">
+          <mxGeometry y="60" width="350" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
