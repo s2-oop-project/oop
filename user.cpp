@@ -49,7 +49,7 @@ void user::set_up_account(){
     getline(cin,user_name);
     cout<<"Good morning "<<user_name<<",Please set your password:"<<endl;
     cin>>user_password;
-    cout<<"Successfully create account:"<<endl<<"user ID: "<<user_ID<<endl<<"user name: "<<user_name<<endl<<"user password: "<<user_password<<endl;
+    cout<<"Successfully create account:"<<endl<<"user ID: "<<user_ID<<endl<<"user name: "<<user_name<<endl<<"user password: "<<user_password<<endl<<endl;
     cin.ignore();
     
     
@@ -162,7 +162,7 @@ void user::return_material(){
             
             //list the book
             cout<<"This is the list of DVD you borrow:"<<endl;
-            for (int i=0;i<book_count;i++){
+            for (int i=0;i<DVD_count;i++){
                     cout<<i+1<<"  "<<myDVD[i].get_material_name()<<endl;
                 }
             
@@ -178,12 +178,6 @@ void user::return_material(){
         }
     }
 }
-
-
-
-
-
-
 
 
 
