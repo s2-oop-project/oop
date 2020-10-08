@@ -21,11 +21,7 @@ material::material(){
 
 
 //normal behavior
-void material::set_up(string Material_name,string Author_name){
-    situation=true;
-    material_name=Material_name;
-    author_name=Author_name;
-}
+
 
 //change of material when it return
 void material::return_material(){
@@ -40,6 +36,10 @@ void material::check_history(){
 }
 
 void material::test_use_material_setup(string t_name,string t_author){
+    
+}
+
+void material::add_new_material(){
     
 }
 
@@ -103,6 +103,23 @@ void Ebook::borrow_material(string borrow_user){
     download_count+=1;
 }
 
+//new define the ebook
+void Ebook::add_new_material(){
+    material_name="none";
+    author_name="none";
+    situation=true;
+    cout<<"input your ebook's name:";
+    cin>>material_name;
+    cout<<"input Author's name:";
+    cin>>author_name;
+    cout<<"how many page are there in the ebook:";
+    cin>>page_num;
+    cout<<endl<<endl<<endl<<"secuessfully add Ebook:"<<endl<<"Ebook name:"<<material_name<<endl<<"Ebook author:"<<author_name<<endl<<"page number:"<<page_num<<endl<<endl<<"——————————————————————————————————————————————"<<endl;
+}
+
+
+
+
 //count
 int Ebook::get_download_count(){
     return download_count;
@@ -128,6 +145,15 @@ void book::test_use_material_setup(string t_name,string t_author){
     page_num=55;
 }
 
+void book::add_new_material(){
+    cout<<"input your book's name:";
+    cin>>material_name;
+    cout<<"input Author's name:";
+    cin>>author_name;
+    cout<<"how many page are there in the book:";
+    cin>>page_num;
+    cout<<endl<<endl<<endl<<"secuessfully add book:"<<endl<<"Book name:"<<material_name<<endl<<"Book author:"<<author_name<<endl<<"page number:"<<page_num<<endl<<endl<<"——————————————————————————————————————————————"<<endl;
+}
 
 void book::set_page_number(int Page){
     page_num=Page;
@@ -150,6 +176,7 @@ void book::check_history(){
     }
     cout<<"___________________________________"<<endl;
 }
+
 
 
 
@@ -180,6 +207,18 @@ void DVD::borrow_material(string borrow_user){
 int DVD::get_length(){
     return length;
 }
+
+
+void DVD::add_new_material(){
+    cout<<"input your DVD's name:";
+    cin>>material_name;
+    cout<<"input Author's name:";
+    cin>>author_name;
+    cout<<"how long is the DVD time :";
+    cin>>length;
+    cout<<endl<<endl<<endl<<"secuessfully add DVD:"<<endl<<"DVD name:"<<material_name<<endl<<"DVD author:"<<    author_name<<endl<<"Length of DVD:"<<length<<endl<<endl<<"——————————————————————————————————————————————"<<endl;
+}
+
 
 void DVD::check_history(){
     for(int i=0;i<borrow_user_list.size();i++){
