@@ -19,7 +19,7 @@ public:
     virtual void test_use_material_setup(string t_name,string t_author);
     virtual void check_history();
     virtual void borrow_material(string borrow_user)=0;
-    virtual void add_new_material();
+    virtual void add_new_material()=0;
     void return_material();
 
 
@@ -53,7 +53,8 @@ public:
     void add_new_material();
     int get_page_num();
     int get_download_count();
-    
+    void check_history();
+
     int page_num;
     int download_count;
     
@@ -86,7 +87,7 @@ public:
     DVD();
     void test_use_material_setup(string t_name,string t_author);
     void borrow_material(string borrow_user);
-    void add_new_material()=0;
+    void add_new_material();
     void set_length(int Len);
     int get_length();
     void check_history();
