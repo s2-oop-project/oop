@@ -6,14 +6,16 @@
 #include<string>
 #include<vector>
 #include"user.h"
+#include<limits>
 #include"material.h"
 
-extern vector<Ebook> add_ebook(vector<Ebook>);
-extern vector<book> add_book(vector<book>);
-extern vector<DVD> add_DVD(vector<DVD>);
+
+extern int choose_material(vector<Ebook> Ebook_list, vector<book> book_list, vector<DVD> DVD_list);
+
 using namespace std;
 
 int user::ID=0;
+int user::staff_ID=0;
 
 user::user(){
 }
@@ -46,7 +48,9 @@ void user::set_up_account(){
     myDVD = new DVD [maximum_borrow];
     
     cout<<"Welcome ! Please enter your name:"<<endl;
+    cin.clear();
     getline(cin,user_name);
+    
     cout<<"Good morning "<<user_name<<",Please set your password:"<<endl;
     cin>>user_password;
     cout<<"Successfully create account:"<<endl<<"user ID: "<<user_ID<<endl<<"user name: "<<user_name<<endl<<"user password: "<<user_password<<endl<<endl;
@@ -66,21 +70,21 @@ void user::list_book_borrow(){
 //change password
 void user::change_user_password(){
     string Password;
-    cout<<"Enter your old password:"<<endl;
-    cin>>Password;
-    if ( Password != user_password){
-        cout<<"wrong old password,can't change the password."<<endl;
-    }else{
         cout<<"Enter your new password:"<<endl;
-        cin>> user_password;
-    }
-    cout<<"Successfully change your password to : "<<user_password;
+        cin>> Password;
+        user_password=Password;
+        cout<<"Successfully change your password to : "<<user_password;
     
 }
 
 
 
 //borrow material
+void user::ebook_borrow(Ebook borrow_ebook){
+    cout<<"sucessfully download ebook:"<<borrow_ebook.material_name<<endl;
+    borrow_ebook.borrow_material(user_name);
+}
+
 
 void user::book_borrow(book borrow_book){
     if (current_borrow <5){
@@ -88,6 +92,7 @@ void user::book_borrow(book borrow_book){
         book_count+=1;
         current_borrow+=1;
         borrow_book.borrow_material(user_name);
+        cout<<"seccessfully borrow book"<<borrow_book.material_name<<endl;
     }else{
         cout<<"you reach your borrow maximum,please return material before you borrow"<<endl;
     }
@@ -205,4 +210,46 @@ int user::get_DVD_count(){
     return DVD_count;
 }
 
+
+//for staff
+//staff name will become id and password initialize as 123456
+//staff can borrow 8 materials
+//check borrow history of material
+// add material
+
+staff::staff(){
+    
+}
+
+void staff::test_use_staff_setup(){
+    user_ID=200+staff_ID;
+    ID+=1;
+    maximum_borrow=8;
+    current_borrow=0;
+    book_count=0;
+    DVD_count=0;
+    mybook = new book [maximum_borrow];
+    myDVD = new DVD [maximum_borrow];
+    user_name=to_string(user_ID);
+    user_password="123456";
+}
+
+void staff::check_history(vector<Ebook> Ebook_list, vector<book> book_list, vector<DVD> DVD_list){
+    int user_choose;
+    int material_num;
+    user_choose=choose_material(Ebook_list,book_list,DVD_list);
+    if(user_choose>=10000 && user_choose<20000){
+        material_num=user_choose-10000;
+        Ebook_list[material_num].check_history();
+        
+    }else if(user_choose>=20000 && user_choose<30000){
+        material_num=user_choose-20000;
+        book_list[material_num].check_history();
+        
+    }else{
+        material_num=user_choose-30000;
+        DVD_list[material_num].check_history();
+    }
+
+}
 

@@ -29,10 +29,9 @@ int staff_behavior(){
     cout<<"3: Change current password."<<endl;
     cout<<"4: Check History"<<endl;
     cout<<"5: Add material"<<endl;
-    cout<<"6: Delete material"<<endl;
     cout<<"-1: Quit account"<<endl;
     cin>>staff_input;
-    while((staff_input >=7) || (staff_input <=-2) || (staff_input == 0) ){
+    while((staff_input >=6) || (staff_input <=-2) || (staff_input == 0) ){
         cout<<"Invalid output please enter the number of your choose:(borrow -> input 1) "<<endl;
         cin>>staff_input;
     }

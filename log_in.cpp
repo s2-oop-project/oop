@@ -15,7 +15,8 @@ int find_user_ID(vector<user> user_list){
     bool find_ID=false;
     while(find_ID == false){
         //ensure correct input
-        cout<<"To login, please enter your ID:"<<endl<<"<cancel login enter -1>"<<endl;
+        cout<<"To login, please enter your ID:"<<endl;
+        //cout<<"<cancel login enter -1>"<<endl;
         while(true){
             if(cin>>user_input_ID){
                 break;
@@ -49,9 +50,12 @@ int find_user_ID(vector<user> user_list){
 
 //passing: user vector, index of user
 //output:  index of user if correct password
+
+
 int check_password(int user_index,vector<user> user_list){
     string user_input_password;
-    cout<<user_list[user_index].get_user_name()<<",please enter your password:<enter -1 to quit login>"<<endl;
+    cout<<user_list[user_index].get_user_name()<<",please enter your password:"<<endl;
+    //cout<<"<enter -1 to quit login>"<<endl;
     while(true){
         if(cin>>user_input_password){
             break;
@@ -81,7 +85,7 @@ int log_in(vector<user> user_list){
     
     user_potential_index=find_user_ID(user_list);
     if(user_potential_index == -1){
-        return -1;
+        user_potential_index=-1;
     }else{
 
         while(checking_password == 0){
@@ -89,11 +93,118 @@ int log_in(vector<user> user_list){
         }
     }
     if (checking_password == -1){
-        return -1;
+        user_potential_index=-1;
     }
     if (checking_password == 1){
-        return user_potential_index;
+        user_potential_index=1;
     }
+    return user_potential_index;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//for staff
+
+int find_staff_ID(vector<staff> staff_list){
+    int staff_input_ID;
+    int my_staff_index;
+    bool find_ID=false;
+    while(find_ID == false){
+        //ensure correct input
+        cout<<"To login, please enter your ID:"<<endl;
+        //cout<<"<cancel login enter -1>"<<endl;
+        while(true){
+            if(cin>>staff_input_ID){
+                break;
+            }else{
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            }
+                
+        }
+
+        //check ID
+        for(int i=0;i<staff_list.size();i++){
+            if(staff_input_ID == staff_list[i].get_user_ID() ){
+                find_ID = true;
+                my_staff_index=i;
+            }
+        }
+        if(find_ID == false){
+            cout<<"wrong ID, please enter again."<<endl;
+        }
+    }
+    
+    
+    return my_staff_index;
+}
+
+
+
+//passing: staff vector, index of staff
+//output:  index of staff if correct password
+
+
+int staff_check_password(int staff_index,vector<staff> staff_list){
+    string staff_input_password;
+    cout<<"staff number "<<staff_list[staff_index].get_user_name()<<",please enter your password:"<<endl;
+    //cout<<"<enter -1 to quit login>"<<endl;
+    while(true){
+        if(cin>>staff_input_password){
+            break;
+        }else{
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
+        }
+    }
+    if(staff_input_password == "-1"){
+        return -1;
+    }else if(staff_input_password == staff_list[staff_index].get_user_password() ){
+        cout<<"sucessfully login."<<endl;
+        return 1;
+    }else{
+        cout<<"incorrect password."<<endl;
+        return 0;
+    }
+}
+
+
+
+
+
+// passing : staff vector
+// output  : return staff index
+int staff_log_in(vector<staff> staff_list){
+    int control_login;
+    int staff_potential_index;
+    int checking_password=0;
+    
+    staff_potential_index=find_staff_ID(staff_list);
+    if(staff_potential_index == -1){
+        staff_potential_index=-1;
+    }else{
+
+        while(checking_password == 0){
+            checking_password=staff_check_password(staff_potential_index,staff_list);
+        }
+    }
+    if (checking_password == -1){
+        staff_potential_index=-1;
+    }
+    if (checking_password == 1){
+        staff_potential_index=1;
+    }
+    return staff_potential_index;
 }
     
     

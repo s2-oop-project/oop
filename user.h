@@ -22,8 +22,11 @@ public:
     void list_book_borrow();
     
 //borrow material
+    void ebook_borrow(Ebook borrow_ebook);
     void book_borrow(book borrow_book);
     void DVD_borrow(DVD borrow_DVD);
+    
+    
     void return_material();
     
     string get_user_password();
@@ -43,6 +46,7 @@ public:
 //    since pointer don't have push back
 //    and we have two pointer dynamic array to save what material user borrow
     static int ID;
+    static int staff_ID;
     int user_ID;
     int maximum_borrow;
     int current_borrow;
@@ -55,6 +59,14 @@ public:
     
 };
 
+
+class staff:public user
+{
+public:
+    staff();
+    void test_use_staff_setup();
+    void check_history(vector<Ebook> Ebook_list, vector<book> book_list, vector<DVD> DVD_list);
+};
 #endif
 
 

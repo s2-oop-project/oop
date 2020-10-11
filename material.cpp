@@ -86,7 +86,7 @@ void Ebook::test_use_material_setup(string t_name,string t_author){
     author_name=t_author;
     situation=true;
     page_num=55;
-    download_count=55;
+    download_count=0;
 }
 
 void Ebook::set_page_number(int Page){
@@ -123,6 +123,13 @@ void Ebook::add_new_material(){
 //count
 int Ebook::get_download_count(){
     return download_count;
+}
+
+void Ebook::check_history(){
+    cout<<"material name: "<<material_name<<endl;
+    cout << "This is the the of Ebooks that people have downloaded so far: ";
+    cout << download_count << endl;
+    cout<<"___________________________________"<<endl;
 }
 
 
@@ -170,8 +177,9 @@ int book::get_page_num(){
 }
 
 void book::check_history(){
+    cout<<"material name: "<<material_name<<endl;
     for(int i=0;i<borrow_user_list.size();i++){
-        cout<<"This is the people list who borrow this book before:";
+        cout<<"This is the people list who borrowed this book before:";
         cout<<borrow_user_list[i]<<endl;
     }
     cout<<"___________________________________"<<endl;
@@ -221,6 +229,7 @@ void DVD::add_new_material(){
 
 
 void DVD::check_history(){
+    cout<<"material name: "<<material_name<<endl;
     for(int i=0;i<borrow_user_list.size();i++){
         cout<<"This is the people list who borrow this DVD before:";
         cout<<borrow_user_list[i]<<endl;
