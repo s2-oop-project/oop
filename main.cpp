@@ -238,7 +238,7 @@ int main(){
                                 
                                 
                                 //book
-                            case 2:-1
+                            case 2:
                                 new_book.add_new_material();
                                 library_book_list.push_back(new_book);
                                 break;
