@@ -92,7 +92,7 @@ void user::book_borrow(book borrow_book){
         book_count+=1;
         current_borrow+=1;
         borrow_book.borrow_material(user_name);
-        cout<<"seccessfully borrow book"<<borrow_book.material_name<<endl;
+        cout<<"seccessfully borrow book "<<borrow_book.material_name<<endl;
     }else{
         cout<<"you reach your borrow maximum,please return material before you borrow"<<endl;
     }
@@ -105,6 +105,7 @@ void user::DVD_borrow(DVD borrow_DVD){
         DVD_count+=1;
         current_borrow+=1;
         borrow_DVD.borrow_material(user_name);
+        cout<<"seccessfully borrow book "<<borrow_DVD.material_name<<endl;
     }else{
         cout<<"you reach your borrow maximum,please return material before you borrow"<<endl;
     }
@@ -223,7 +224,7 @@ staff::staff(){
 
 void staff::test_use_staff_setup(){
     user_ID=200+staff_ID;
-    ID+=1;
+    staff_ID+=1;
     maximum_borrow=8;
     current_borrow=0;
     book_count=0;
