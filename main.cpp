@@ -15,6 +15,10 @@ extern int choose_material(vector<Ebook> Ebook_list, vector<book> book_list, vec
 extern int public_behavior();
 extern int staff_behavior();
 
+extern vector<Ebook> list_of_ebook(vector<Ebook> Ebook_list);
+extern vector<book> list_of_book(vector<book> book_list);
+extern vector<DVD> list_of_DVD(vector<DVD> DVD_list);
+
 
 
 int main(){
@@ -34,6 +38,10 @@ int main(){
     vector<Ebook>  library_ebook_list;
     vector<book>   library_book_list;
     vector<DVD>    library_DVD_list;
+
+    library_ebook_list = list_of_ebook(library_ebook_list);
+    library_book_list = list_of_book(library_book_list);
+    library_DVD_list = list_of_DVD(library_DVD_list);
     
     
    //set up of the library user vector
