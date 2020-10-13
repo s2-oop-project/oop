@@ -90,7 +90,10 @@ void user::change_user_password(){
 
 //borrow material
 void user::ebook_borrow(Ebook borrow_ebook){
-    cout<<"sucessfully download ebook:"<<borrow_ebook.material_name<<endl;
+    cout<<"sucessfully download ebook:"<<endl;
+    cout<<"material name    "<<borrow_ebook.material_name<<endl;
+    cout<<"author name      "<<borrow_ebook.author_name<<endl;
+    cout<<"page number      "<<borrow_ebook.page_num<<endl;
     borrow_ebook.borrow_material(user_name);
 }
 
@@ -101,7 +104,10 @@ void user::book_borrow(book borrow_book){
         book_count+=1;
         current_borrow+=1;
         borrow_book.borrow_material(user_name);
-        cout<<"seccessfully borrow book "<<borrow_book.material_name<<endl;
+        cout<<"sucessfully borrow book:"<<endl;
+        cout<<"material name    "<<borrow_book.material_name<<endl;
+        cout<<"author name      "<<borrow_book.author_name<<endl;
+        cout<<"page number      "<<borrow_book.page_num<<endl;
     }else{
         cout<<"you reach your borrow maximum,please return material before you borrow"<<endl;
     }
@@ -114,7 +120,10 @@ void user::DVD_borrow(DVD borrow_DVD){
         DVD_count+=1;
         current_borrow+=1;
         borrow_DVD.borrow_material(user_name);
-        cout<<"seccessfully borrow book "<<borrow_DVD.material_name<<endl;
+        cout<<"seccessfully borrow DVD "<<endl;
+        cout<<"material name    "<<borrow_DVD.material_name<<endl;
+        cout<<"author name      "<<borrow_DVD.author_name<<endl;
+        cout<<"Length of DVD      "<<borrow_DVD.length<<" minutes"<<endl;
     }else{
         cout<<"you reach your borrow maximum,please return material before you borrow"<<endl;
     }

@@ -55,7 +55,7 @@ int main(){
     //user log in
     while(user_num==0){
         cout<<endl;
-        cout<<"Welcome to the library!"<<endl<<"please choose your log in type"<<endl<<"1 user log in."<<endl<<"2 staff log in"<<endl<<"3 new user? create account now!"<<endl;
+        cout<<"Welcome to the library!"<<endl<<"please choose your log in type"<<endl<<"1 user log in."<<endl<<"2 staff log in"<<endl<<"3 new user? create account now!"<<endl<<"4 quit system."<<endl;
         while (true) {
           if (cin >>user_choose ) {
             break;
@@ -65,7 +65,7 @@ int main(){
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
           }
         }
-        while(user_choose<1 || user_choose>3){
+        while(user_choose<1 || user_choose>4){
             cout<<"invalid input,please enter again."<<endl;
             while (true) {
               if (cin >>user_choose ) {
@@ -82,18 +82,32 @@ int main(){
         cin.ignore();
         //different behavior of log in
         if(user_choose ==1){
-            cout<<user_list[0].maximum_borrow<<endl;//
+            
             current_user_index=log_in(user_list);
-            cout<<user_list[0].maximum_borrow<<endl;//
+            if(current_user_index==-1){
+                user_num=0;
+                user_type=0;
+            }else{
             user_type = 1;
+            }
         }else if(user_choose == 2){
             current_staff_index=staff_log_in(staff_list);
+            if(current_staff_index==-1){
+                user_num=0;
+                user_type=0;
+            }else{
             user_type = 2;
-        }else{
+            }
+        }else if (user_choose == 3){
             current_user_index=user_list.size()+1;
             current_user.set_up_account();
             user_list.push_back(current_user);
-            user_type =1;
+            user_num=0;
+            user_type=0;
+        }else{
+            user_num=-1;
+            user_type=0;
+            cout<<"system off"<<endl;
         }
         
         
@@ -110,7 +124,7 @@ int main(){
         
         
         int behavior_num=0;
-        while (behavior_num != -1){
+        while (behavior_num != -1 && user_type != 0){
             
             
             
