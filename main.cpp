@@ -82,7 +82,9 @@ int main(){
         cin.ignore();
         //different behavior of log in
         if(user_choose ==1){
+            cout<<user_list[0].maximum_borrow<<endl;//
             current_user_index=log_in(user_list);
+            cout<<user_list[0].maximum_borrow<<endl;//
             user_type = 1;
         }else if(user_choose == 2){
             current_staff_index=staff_log_in(staff_list);
@@ -120,6 +122,7 @@ int main(){
                 
                 
                 //ask behavior
+                cout<<user_list[current_user_index].maximum_borrow<<endl;
                 behavior_num=public_behavior();
                 switch (behavior_num) {
                     //borrow
@@ -147,6 +150,12 @@ int main(){
                    //change password
                     case 3:
                         user_list[current_user_index].change_user_password();
+                        break;
+                        
+                        
+                    case 4:
+                        cout<<user_list[current_user_index].maximum_borrow<<endl;//
+                        user_list[current_user_index].list_book_borrow();
                         break;
                         
                         
@@ -253,6 +262,10 @@ int main(){
                                 break;
                         }
                         
+                        break;
+                        
+                    case 6:
+                        staff_list[current_staff_index].list_book_borrow();
                         break;
                         
                         

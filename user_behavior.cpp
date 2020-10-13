@@ -12,9 +12,10 @@ int public_behavior(){
     cout<<"1: Borrow material"<<endl;
     cout<<"2: Return material"<<endl;
     cout<<"3: Change current password."<<endl;
+    cout<<"4: check your current borrow list"<<endl;
     cout<<"-1: Quit account"<<endl;
     cin>>user_input;
-    while(user_input != 1 && user_input != 2 && user_input != 3 && user_input != -1){
+    while(user_input != 1 && user_input != 2 && user_input != 3 && user_input != 4 && user_input != -1){
         cout<<"Invalid output please enter the number of your choose:(borrow -> input 1) "<<endl;
         cin>>user_input;
     }
@@ -29,9 +30,10 @@ int staff_behavior(){
     cout<<"3: Change current password."<<endl;
     cout<<"4: Check History"<<endl;
     cout<<"5: Add material"<<endl;
+    cout<<"6: check your current borrow list"<<endl;
     cout<<"-1: Quit account"<<endl;
     cin>>staff_input;
-    while((staff_input >=6) || (staff_input <=-2) || (staff_input == 0) ){
+    while((staff_input >=7) || (staff_input <=-2) || (staff_input == 0) ){
         cout<<"Invalid output please enter the number of your choose:(borrow -> input 1) "<<endl;
         cin>>staff_input;
     }

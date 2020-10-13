@@ -92,12 +92,6 @@ int log_in(vector<user> user_list){
             checking_password=check_password(user_potential_index,user_list);
         }
     }
-    if (checking_password == -1){
-        user_potential_index=-1;
-    }
-    if (checking_password == 1){
-        user_potential_index=1;
-    }
     return user_potential_index;
 }
 

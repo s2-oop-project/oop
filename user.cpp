@@ -26,6 +26,7 @@ void user::test_use_user_setup(string q_name,string q_password){
     user_ID=100+ID;
     ID+=1;
     maximum_borrow=5;
+    cout<<maximum_borrow<<endl;
     current_borrow=0;
     book_count=0;
     DVD_count=0;
@@ -59,11 +60,19 @@ void user::set_up_account(){
     
 }
 
-//book borrow
+//material borrow
 void user::list_book_borrow(){
-    for(int i=0;i<current_borrow;i++){
+    cout<<"you have currently borrow:"<<current_borrow<<endl<<"you can borrow "<<maximum_borrow-current_borrow<<"more."<<endl;
+    cout<<"Book list:"<<endl;
+    for(int i=0;i<book_count;i++){
         cout<<mybook[i].get_material_name()<<endl;
+        
     }
+    cout<<"DVD list:"<<endl;
+    for(int i=0;i<DVD_count;i++){
+        cout<<myDVD[i].get_material_name()<<endl;
+    }
+    
 }
 
 
@@ -73,7 +82,7 @@ void user::change_user_password(){
         cout<<"Enter your new password:"<<endl;
         cin>> Password;
         user_password=Password;
-        cout<<"Successfully change your password to : "<<user_password;
+        cout<<"Successfully change your password to : "<<user_password<<endl;
     
 }
 
