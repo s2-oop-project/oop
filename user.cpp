@@ -26,7 +26,7 @@ void user::test_use_user_setup(string q_name,string q_password){
     user_ID=100+ID;
     ID+=1;
     maximum_borrow=5;
-    cout<<maximum_borrow<<endl;
+    //cout<<maximum_borrow<<endl;
     current_borrow=0;
     book_count=0;
     DVD_count=0;
@@ -271,4 +271,3 @@ void staff::check_history(vector<Ebook> Ebook_list, vector<book> book_list, vect
     }
 
 }
-

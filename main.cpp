@@ -66,6 +66,7 @@ int main(){
         cout<<"Welcome to the library!"<<endl<<"please choose your log in type"<<endl<<"1 user log in."<<endl<<"2 staff log in"<<endl<<"3 new user? create account now!"<<endl<<"4 quit system."<<endl;
         while (true) {
           if (cin >>user_choose ) {
+
             break;
           } else {
             cout<<"invalid input,please enter again."<<endl;
@@ -144,7 +145,7 @@ int main(){
                 
                 
                 //ask behavior
-                cout<<user_list[current_user_index].maximum_borrow<<endl;
+                //cout<<user_list[current_user_index].maximum_borrow<<endl;
                 behavior_num=public_behavior();
                 switch (behavior_num) {
                     //borrow
@@ -176,7 +177,7 @@ int main(){
                         
                         
                     case 4:
-                        cout<<user_list[current_user_index].maximum_borrow<<endl;//
+                        //cout<<user_list[current_user_index].maximum_borrow<<endl;//
                         user_list[current_user_index].list_book_borrow();
                         break;
                         
