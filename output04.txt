@@ -1,0 +1,34 @@
+
+Welcome to the library!
+please choose your log in type
+1 user log in.
+2 staff log in
+3 new user? create account now!
+4 quit system.
+To login, please enter your ID:
+<cancel login enter -1>
+wai,please enter your password:
+<enter -1 to quit login>
+sucessfully login.
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: check your current borrow list
+-1: Quit account
+Enter your new password:
+Successfully change your password to : 12345
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: check your current borrow list
+-1: Quit account
+
+Welcome to the library!
+please choose your log in type
+1 user log in.
+2 staff log in
+3 new user? create account now!
+4 quit system.
+system off

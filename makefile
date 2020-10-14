@@ -37,3 +37,12 @@ test_choose_material: material.o choose_material.cpp choose_material_test.cpp
 
 test_log_in: user.o log_in.cpp log_in_test.cpp material.o choose_material.cpp
 	g++ user.o log_in.cpp log_in_test.cpp material.o choose_material.cpp -o test_log_in $(FLAGS)
+
+inout_test:
+	./test < input01.txt | diff - output01.txt
+	./test < input02.txt | diff - output02.txt
+	./test < input03.txt | diff - output03.txt
+	./test < input04.txt | diff - output04.txt
+	./test < input05.txt | diff - output05.txt
+	./test < input06.txt | diff - output06.txt
+	./test < input07.txt | diff - output07.txt

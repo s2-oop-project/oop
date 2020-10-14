@@ -1,0 +1,91 @@
+
+Welcome to the library!
+please choose your log in type
+1 user log in.
+2 staff log in
+3 new user? create account now!
+4 quit system.
+To login, please enter your ID:
+<cancel login enter -1>
+staff number 200,please enter your password:
+<enter -1 to quit login>
+sucessfully login.
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+Which type of material would you like to add?
+1 ebook
+2 book
+3 DVD
+input your ebook's name:input Author's name:how many page are there in the ebook:
+
+
+secuessfully add Ebook:
+Ebook name:ebook1
+Ebook author:author1
+page number:100
+
+——————————————————————————————————————————————
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+Which type of material would you like to add?
+1 ebook
+2 book
+3 DVD
+input your book's name:input Author's name:how many page are there in the book:
+
+
+secuessfully add book:
+Book name:book1
+Book author:author2
+page number:200
+
+——————————————————————————————————————————————
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+Which type of material would you like to add?
+1 ebook
+2 book
+3 DVD
+input your DVD's name:input Author's name:how long is the DVD time :
+
+
+secuessfully add DVD:
+DVD name:dvd1
+DVD author:author3
+Length of DVD:300
+
+——————————————————————————————————————————————
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+
+Welcome to the library!
+please choose your log in type
+1 user log in.
+2 staff log in
+3 new user? create account now!
+4 quit system.
+system off

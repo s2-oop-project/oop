@@ -1,0 +1,19 @@
+
+Welcome to the library!
+please choose your log in type
+1 user log in.
+2 staff log in
+3 new user? create account now!
+4 quit system.
+To login, please enter your ID:
+<cancel login enter -1>
+wai,please enter your password:
+<enter -1 to quit login>
+
+Welcome to the library!
+please choose your log in type
+1 user log in.
+2 staff log in
+3 new user? create account now!
+4 quit system.
+system off
