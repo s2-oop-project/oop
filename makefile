@@ -12,6 +12,11 @@ user.o: user.h user.cpp
 
 tests: test_user_setup test_user_borrow_return_test test_material test_material_borrow_return_checkhistory test_user_staff test_choose_material
 
+user_unit_testing : material.o user.o user_unit_testing.cpp choose_material.cpp
+	g++ material.o user.o user_unit_testing.cpp choose_material.cpp -o user_unit_testing $(FLAGS)
+
+material_unit_testing : material.o user.o material_unit_testing.cpp choose_material.cpp
+	g++ material.o user.o material_unit_testing.cpp choose_material.cpp -o material_unit_testing $(FLAGS)
 
 test_user_setup: material.o user.o user_setup_test.cpp choose_material.cpp
 	g++ material.o user.o user_setup_test.cpp choose_material.cpp -o test_user_setup $(FLAGS)
@@ -38,6 +43,7 @@ test_choose_material: material.o choose_material.cpp choose_material_test.cpp
 test_log_in: user.o log_in.cpp log_in_test.cpp material.o choose_material.cpp
 	g++ user.o log_in.cpp log_in_test.cpp material.o choose_material.cpp -o test_log_in $(FLAGS)
 
+
 inout_test:
 	./test < input01.txt | diff - output01.txt
 	./test < input02.txt | diff - output02.txt
@@ -46,3 +52,4 @@ inout_test:
 	./test < input05.txt | diff - output05.txt
 	./test < input06.txt | diff - output06.txt
 	./test < input07.txt | diff - output07.txt
+	./test < input08.txt | diff - output08.txt
