@@ -45,17 +45,22 @@ public:
 //    user also have their name and password,we count the sub-class of material
 //    since pointer don't have push back
 //    and we have two pointer dynamic array to save what material user borrow
-    static int ID;
-    static int staff_ID;
-    int user_ID;
-    int maximum_borrow;
-    int current_borrow;
-    string user_password;
-    string user_name;
+
+
     int book_count;
     int DVD_count;
     book * mybook;
     DVD * myDVD;
+
+    int maximum_borrow;
+    int current_borrow;
+
+protected:
+    static int ID;
+    static int staff_ID;
+    int user_ID;
+    string user_password;
+    string user_name;
     
 };
 

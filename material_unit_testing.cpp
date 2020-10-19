@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
 
+
 	// 1. testing for ebook (name, author, page number)
 	{
 		Ebook *ebook;
@@ -69,7 +70,7 @@ int main(){
 		}
 	}	
 
-	// 2. testing for DVD (name, author, length)
+	// 3. testing for DVD (name, author, length)
 	{
 		DVD *DVD1;
 		DVD1 = new DVD();
@@ -102,5 +103,75 @@ int main(){
 	}
 
 
+	// 4. testing for borrow material & check history
+	{
+		cout << "<<<<< 4-1. testing for borrow material & check history(ebook) >>>>>" << endl;
+		Ebook ebook1;
+		ebook1.test_use_material_setup("ebook1", "e.author1");
+		ebook1.borrow_material("user1");
+		material *eb1 = &ebook1;
+		eb1 -> check_history();
 
+	}
+
+	{
+		cout << "<<<<< 4-2. testing for borrow material & check history(book) >>>>>" << endl;
+		book book1;
+		book1.test_use_material_setup("book1", "b.author1");
+		book1.borrow_material("user1");
+		material *b1 = &book1;
+		b1 -> check_history();
+
+	}
+
+	{
+		cout << "<<<<< 4-3. testing for borrow material & check history(DVD) >>>>>" << endl;
+		DVD DVD1;
+		DVD1.test_use_material_setup("dvd1", "d.author1");
+		DVD1.borrow_material("user1");
+		material *d1 = &DVD1;
+		d1 -> check_history();
+
+	}
+
+	// 5. testing for add material
+	{
+		int testpassed = 0;
+
+		// ebook
+		Ebook ebook1;
+		material *eb1 = &ebook1;
+		eb1->add_new_material();
+		if(eb1->get_material_name()!=eb1->material_name){
+			cout << "<<<<< 5-1. testing for add ebook failed >>>>>" << endl;
+		}else{
+			testpassed ++;
+		}
+
+		// book
+		book book1;
+		material *b1 = &book1;
+		b1->add_new_material();
+		if(b1->get_material_name()!=b1->material_name){
+			cout << "<<<<< 5-2. testing for add book failed >>>>>" << endl;
+		}else{
+			testpassed ++;
+		}
+
+		//DVD
+		DVD DVD1;
+		material *d1 = &DVD1;
+		d1->add_new_material();
+		if(d1->get_material_name()!=d1->material_name){
+			cout << "<<<<< 5-3. testing for add DVD failed >>>>>" << endl;
+		}else{
+			testpassed ++;
+		}
+
+		if(testpassed>=3){
+			cout << "<<<<< 5. all testing for add material passed >>>>>" << endl;
+		}
+	}
+
+	return 0;
 }
