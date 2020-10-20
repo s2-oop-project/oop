@@ -154,19 +154,22 @@ int main(){
                         if(material_choose>=10000 && material_choose<20000){
                             material_num=material_choose-10000;
                             user_list[current_user_index].ebook_borrow(library_ebook_list[material_num]);
-                            
+                            library_ebook_list[material_num].borrow_material(user_list[current_user_index].get_user_name());
                         }else if(material_choose>=20000 && material_choose<30000){
                             material_num=material_choose-20000;
                             user_list[current_user_index].book_borrow(library_book_list[material_num]);
+                            library_book_list[material_num].borrow_material(user_list[current_user_index].get_user_name());
                         }else{
                             material_num=material_choose-30000;
                             user_list[current_user_index].DVD_borrow(library_DVD_list[material_num]);
+                            library_DVD_list[material_num].borrow_material(user_list[current_user_index].get_user_name());
                         }
                         break;
                         
                     //return
                     case 2:
                         user_list[current_user_index].return_material();
+                        
                         break;
                         
                         
@@ -207,17 +210,20 @@ int main(){
                         if(material_choose>=10000 && material_choose<20000){
                             material_num=material_choose-10000;
                             staff_list[current_staff_index].ebook_borrow(library_ebook_list[material_num]);
+                            library_ebook_list[material_num].borrow_material(staff_list[current_staff_index].get_user_name());
                             
                         }else if(material_choose>=20000 && material_choose<30000){
                             material_num=material_choose-20000;
                             staff_list[current_staff_index].book_borrow(library_book_list[material_num]);
+                            library_book_list[material_num].borrow_material(staff_list[current_staff_index].get_user_name());
                         }else{
                             material_num=material_choose-30000;
                             staff_list[current_staff_index].DVD_borrow(library_DVD_list[material_num]);
+                            library_DVD_list[material_num].borrow_material(staff_list[current_staff_index].get_user_name());
                         }
                         break;
                         
-                        
+                          
                         
                     // return
                     case 2:

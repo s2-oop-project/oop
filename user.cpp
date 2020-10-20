@@ -171,12 +171,17 @@ void user::return_material(){
             cout<<"Enter the number of book you want to return :"<<endl;
             cin>>book_choose;
             book_choose-=1;
+            
             //show that user return success
             cout<<"sucessfully return book:"<<endl<<mybook[book_choose].get_material_name()<<endl;
             current_borrow-=1;
             
+            mybook[book_choose].return_material();
+            mybook[book_choose].situation=true;
+            
             //move all element up 1 to cover the one user delete.
-            for (int i = book_choose;i<current_borrow;i++){
+            book_count-=1;
+            for (int i = book_choose;i<book_count;i++){
                 mybook[i]=mybook[i+1];
             }
             
@@ -197,8 +202,13 @@ void user::return_material(){
             //show that user return success
             cout<<"sucessfully return DVD:"<<endl<<myDVD[DVD_choose].get_material_name()<<endl;
             current_borrow-=1;
+            myDVD[DVD_choose].return_material();
+            myDVD[DVD_choose].situation=true;
             
-            
+            DVD_count-=1;
+            for (int i = DVD_choose;i<DVD_count;i++){
+                myDVD[i]=myDVD[i+1];
+            }
         }
     }
 }
@@ -256,18 +266,23 @@ void staff::test_use_staff_setup(){
 void staff::check_history(vector<Ebook> Ebook_list, vector<book> book_list, vector<DVD> DVD_list){
     int user_choose;
     int material_num;
+    Ebook *checkebook;
+    book *checkbook;
+    DVD *checkDVD;
     user_choose=choose_material(Ebook_list,book_list,DVD_list);
     if(user_choose>=10000 && user_choose<20000){
-        material_num=user_choose-10000;
-        Ebook_list[material_num].check_history();
+        checkebook=&Ebook_list[user_choose-10000];
+        checkebook->check_history();
         
+
     }else if(user_choose>=20000 && user_choose<30000){
-        material_num=user_choose-20000;
-        book_list[material_num].check_history();
+        checkbook=&book_list[material_num=user_choose-20000];
+        checkbook->check_history();
+        
         
     }else{
-        material_num=user_choose-30000;
-        DVD_list[material_num].check_history();
+        checkDVD=&DVD_list[user_choose-30000];
+        checkDVD->check_history();
     }
 
 }

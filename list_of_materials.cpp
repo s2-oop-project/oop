@@ -1,5 +1,3 @@
-// this program is about the list of materials that library possesses.
-
 #include <iostream>
 #include <string>
 #include <vector>
@@ -7,7 +5,7 @@
 
 using namespace std;
 
-// list of ebooks
+
 vector<Ebook> list_of_ebook(vector<Ebook> Ebook_list){
 	Ebook ebook;
 
@@ -26,7 +24,6 @@ vector<Ebook> list_of_ebook(vector<Ebook> Ebook_list){
 	return Ebook_list;
 }
 
-// list of books
 vector<book> list_of_book(vector<book> book_list){
 	book book;
 	string book_names[10] = {"To Kill a Mockingbird", "1984", "The Lord of the Rings", "The Great Gatsby", "Pride and Prejudice", 
@@ -44,7 +41,6 @@ vector<book> list_of_book(vector<book> book_list){
 	return book_list;
 }
 
-//list of dvds
 vector<DVD> list_of_DVD(vector<DVD> DVD_list){
 	DVD dvd;
 	string dvd_names[10] = {"The Lion King", "Finding Nemo", "Beauty and the Beast", "Avatar", 

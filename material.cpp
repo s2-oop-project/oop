@@ -127,7 +127,7 @@ int Ebook::get_download_count(){
 
 void Ebook::check_history(){
     cout<<"material name: "<<material_name<<endl;
-    cout << "This is the the of Ebooks that people have downloaded so far: ";
+    cout << "This is the the of Ebooks that people have downloaded so far: "<<endl;
     cout << download_count << endl;
     cout<<"___________________________________"<<endl;
 }
@@ -178,8 +178,8 @@ int book::get_page_num(){
 
 void book::check_history(){
     cout<<"material name: "<<material_name<<endl;
+    cout<<"This is the people list who borrowed this book before:"<<endl;
     for(int i=0;i<borrow_user_list.size();i++){
-        cout<<"This is the people list who borrowed this book before:";
         cout<<borrow_user_list[i]<<endl;
     }
     cout<<"___________________________________"<<endl;
@@ -230,8 +230,8 @@ void DVD::add_new_material(){
 
 void DVD::check_history(){
     cout<<"material name: "<<material_name<<endl;
+    cout<<"This is the people list who borrow this DVD before:"<<endl;
     for(int i=0;i<borrow_user_list.size();i++){
-        cout<<"This is the people list who borrow this DVD before:";
         cout<<borrow_user_list[i]<<endl;
     }
     cout<<"___________________________________"<<endl;
