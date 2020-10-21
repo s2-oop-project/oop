@@ -30,9 +30,9 @@ vector<Ebook> list_of_ebook(vector<Ebook> Ebook_list){
 vector<book> list_of_book(vector<book> book_list){
 	book book;
 	string book_names[10] = {"To Kill a Mockingbird", "1984", "The Lord of the Rings", "The Great Gatsby", "Pride and Prejudice", 
-							"The Diary Of A Young Girl", "The Book Thief", "The Hobbit", "Little Women"};
+							"The Diary Of A Young Girl", "The Book Thief", "The Hobbit", "Little Women", "The Little Prince"};
 	string book_author[10] = {"Harper Lee", "George Orwell", "J.R.R.Tolkien", "F.Scott", "Jane Austen", 
-							"Anne Frank", "Markus Zusak", "J.R.R.Tolkien", "Louisa May Alcott"};
+							"Anne Frank", "Markus Zusak", "J.R.R.Tolkien", "Louisa May Alcott", "Saint-Exupery"};
 	int page_nums[10] = {345, 657, 583, 456, 278, 240, 765, 345, 876, 190};
 
 

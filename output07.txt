@@ -46,7 +46,7 @@ book code    material situation    book in the library:
 20006         available             The Book Thief
 20007         available             The Hobbit
 20008         available             Little Women
-20009         available             
+20009         available             The Little Prince
 
 
 DVD:
@@ -109,4 +109,6 @@ please choose your log in type
 2 staff log in
 3 new user? create account now!
 4 quit system.
+user memory free
+staff memory free
 system off

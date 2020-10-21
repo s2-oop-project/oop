@@ -18,6 +18,13 @@ int user::ID=0;
 int user::staff_ID=0;
 
 user::user(){
+
+    // user_ID=100+ID;
+    // ID+=1;
+    maximum_borrow=5;
+    mybook = new book [maximum_borrow];
+    myDVD = new DVD [maximum_borrow];
+
 }
 
 
@@ -30,8 +37,8 @@ void user::test_use_user_setup(string q_name,string q_password){
     current_borrow=0;
     book_count=0;
     DVD_count=0;
-    mybook = new book [maximum_borrow];
-    myDVD = new DVD [maximum_borrow];
+  //  mybook = new book [maximum_borrow];
+  //  myDVD = new DVD [maximum_borrow];
     user_name=q_name;
     user_password=q_password;
 }
@@ -45,8 +52,8 @@ void user::set_up_account(){
     current_borrow=0;
     book_count=0;
     DVD_count=0;
-    mybook = new book [maximum_borrow];
-    myDVD = new DVD [maximum_borrow];
+   // mybook = new book [maximum_borrow];
+   // myDVD = new DVD [maximum_borrow];
     
     cout<<"Welcome ! Please enter your name:"<<endl;
     cin.clear();
@@ -239,6 +246,11 @@ int user::get_DVD_count(){
     return DVD_count;
 }
 
+user::~user(){
+    //delete[] mybook;
+   //delete[] myDVD;
+}
+
 
 //for staff
 //staff name will become id and password initialize as 123456
@@ -247,7 +259,11 @@ int user::get_DVD_count(){
 // add material
 
 staff::staff(){
-    
+    // user_ID=100+ID;
+    // ID+=1;
+    // maximum_borrow=8;
+    // mybook = new book [maximum_borrow];
+    // myDVD = new DVD [maximum_borrow];
 }
 
 void staff::test_use_staff_setup(){
@@ -257,8 +273,8 @@ void staff::test_use_staff_setup(){
     current_borrow=0;
     book_count=0;
     DVD_count=0;
-    mybook = new book [maximum_borrow];
-    myDVD = new DVD [maximum_borrow];
+  //  mybook = new book [maximum_borrow];
+   // myDVD = new DVD [maximum_borrow];
     user_password="123456";
 }
 
@@ -284,4 +300,9 @@ void staff::check_history(vector<Ebook> Ebook_list, vector<book> book_list, vect
         checkDVD->check_history();
     }
 
+}
+
+staff::~staff(){
+  //  delete[] mybook;
+   // delete[] myDVD;
 }

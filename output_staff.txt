@@ -1,0 +1,329 @@
+
+Welcome to the library!
+please choose your log in type
+1 user log in.
+2 staff log in
+3 new user? create account now!
+4 quit system.
+To login, please enter your ID:
+<cancel login enter -1>
+staff number 200,please enter your password:
+<enter -1 to quit login>
+sucessfully login.
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+This is the material list we have in the library:
+
+
+Ebook:
+ebook code    material situation    Ebook in the library:
+10000         available             The Cipher
+10001         available             If You Tell
+10002         available             I Promise You
+10003         available             Please Like Me
+10004         available             Spellbreaker
+10005         available             Harry Potter
+10006         available             Frozen
+10007         available             The Secret Lake
+10008         available             The Hobbit
+10009         available             Pete the Cat
+
+
+book:
+book code    material situation    book in the library:
+20000         available             To Kill a Mockingbird
+20001         available             1984
+20002         available             The Lord of the Rings
+20003         available             The Great Gatsby
+20004         available             Pride and Prejudice
+20005         available             The Diary Of A Young Girl
+20006         available             The Book Thief
+20007         available             The Hobbit
+20008         available             Little Women
+20009         available             The Little Prince
+
+
+DVD:
+DVD code    material situation    DVD in the library:
+30000         available             The Lion King
+30001         available             Finding Nemo
+30002         available             Beauty and the Beast
+30003         available             Avatar
+30004         available             Spider Man
+30005         available             Jurassic Park
+30006         available             Shrek
+30007         available             Iron Man
+30008         available             The Jungle Book
+30009         available             300
+Please enter the material code related to the one you want to borrow.
+sucessfully download ebook:
+material name    The Cipher
+author name      Isabella Maldonado
+page number      320
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+This is the material list we have in the library:
+
+
+Ebook:
+ebook code    material situation    Ebook in the library:
+10000         available             The Cipher
+10001         available             If You Tell
+10002         available             I Promise You
+10003         available             Please Like Me
+10004         available             Spellbreaker
+10005         available             Harry Potter
+10006         available             Frozen
+10007         available             The Secret Lake
+10008         available             The Hobbit
+10009         available             Pete the Cat
+
+
+book:
+book code    material situation    book in the library:
+20000         available             To Kill a Mockingbird
+20001         available             1984
+20002         available             The Lord of the Rings
+20003         available             The Great Gatsby
+20004         available             Pride and Prejudice
+20005         available             The Diary Of A Young Girl
+20006         available             The Book Thief
+20007         available             The Hobbit
+20008         available             Little Women
+20009         available             The Little Prince
+
+
+DVD:
+DVD code    material situation    DVD in the library:
+30000         available             The Lion King
+30001         available             Finding Nemo
+30002         available             Beauty and the Beast
+30003         available             Avatar
+30004         available             Spider Man
+30005         available             Jurassic Park
+30006         available             Shrek
+30007         available             Iron Man
+30008         available             The Jungle Book
+30009         available             300
+Please enter the material code related to the one you want to borrow.
+sucessfully borrow book:
+material name    To Kill a Mockingbird
+author name      Harper Lee
+page number      345
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+you have currently borrow:1
+you can borrow 7more.
+Book list:
+To Kill a Mockingbird
+DVD list:
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+Which kind of material would you like to return?
+book (B)
+This is the list of book you borrow:
+1  To Kill a Mockingbird
+Enter the number of book you want to return :
+sucessfully return book:
+To Kill a Mockingbird
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+Enter your new password:
+Successfully change your password to : 123
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+This is the material list we have in the library:
+
+
+Ebook:
+ebook code    material situation    Ebook in the library:
+10000         available             The Cipher
+10001         available             If You Tell
+10002         available             I Promise You
+10003         available             Please Like Me
+10004         available             Spellbreaker
+10005         available             Harry Potter
+10006         available             Frozen
+10007         available             The Secret Lake
+10008         available             The Hobbit
+10009         available             Pete the Cat
+
+
+book:
+book code    material situation    book in the library:
+20000         rent out             To Kill a Mockingbird
+20001         available             1984
+20002         available             The Lord of the Rings
+20003         available             The Great Gatsby
+20004         available             Pride and Prejudice
+20005         available             The Diary Of A Young Girl
+20006         available             The Book Thief
+20007         available             The Hobbit
+20008         available             Little Women
+20009         available             The Little Prince
+
+
+DVD:
+DVD code    material situation    DVD in the library:
+30000         available             The Lion King
+30001         available             Finding Nemo
+30002         available             Beauty and the Beast
+30003         available             Avatar
+30004         available             Spider Man
+30005         available             Jurassic Park
+30006         available             Shrek
+30007         available             Iron Man
+30008         available             The Jungle Book
+30009         available             300
+Please enter the material code related to the one you want to borrow.
+material name: To Kill a Mockingbird
+This is the people list who borrowed this book before:
+
+___________________________________
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+Which type of material would you like to add?
+1 ebook
+2 book
+3 DVD
+input your DVD's name:input Author's name:how long is the DVD time :
+
+
+secuessfully add DVD:
+DVD name:DVD1
+DVD author:A1
+Length of DVD:123
+
+——————————————————————————————————————————————
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+This is the material list we have in the library:
+
+
+Ebook:
+ebook code    material situation    Ebook in the library:
+10000         available             The Cipher
+10001         available             If You Tell
+10002         available             I Promise You
+10003         available             Please Like Me
+10004         available             Spellbreaker
+10005         available             Harry Potter
+10006         available             Frozen
+10007         available             The Secret Lake
+10008         available             The Hobbit
+10009         available             Pete the Cat
+
+
+book:
+book code    material situation    book in the library:
+20000         rent out             To Kill a Mockingbird
+20001         available             1984
+20002         available             The Lord of the Rings
+20003         available             The Great Gatsby
+20004         available             Pride and Prejudice
+20005         available             The Diary Of A Young Girl
+20006         available             The Book Thief
+20007         available             The Hobbit
+20008         available             Little Women
+20009         available             The Little Prince
+
+
+DVD:
+DVD code    material situation    DVD in the library:
+30000         available             The Lion King
+30001         available             Finding Nemo
+30002         available             Beauty and the Beast
+30003         available             Avatar
+30004         available             Spider Man
+30005         available             Jurassic Park
+30006         available             Shrek
+30007         available             Iron Man
+30008         available             The Jungle Book
+30009         available             300
+30010         available             DVD1
+Please enter the material code related to the one you want to borrow.
+seccessfully borrow DVD 
+material name    DVD1
+author name      A1
+Length of DVD      123 minutes
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+Which kind of material would you like to return?
+DVD (D)
+This is the list of DVD you borrow:
+1  DVD1
+Enter the number of DVD you want to return :
+sucessfully return DVD:
+DVD1
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+
+Welcome to the library!
+please choose your log in type
+1 user log in.
+2 staff log in
+3 new user? create account now!
+4 quit system.
+user memory free
+staff memory free
+system off

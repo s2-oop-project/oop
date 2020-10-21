@@ -70,10 +70,30 @@ What would you like to do today?
 3: Change current password.
 4: check your current borrow list
 -1: Quit account
-you have currently borrow:1
-you can borrow 4more.
-Book list:
+Which kind of material would you like to return?
+book (B)
+This is the list of book you borrow:
+1  To Kill a Mockingbird
+Enter the number of book you want to return :
+sucessfully return book:
 To Kill a Mockingbird
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: check your current borrow list
+-1: Quit account
+Enter your new password:
+Successfully change your password to : 12345
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: check your current borrow list
+-1: Quit account
+you have currently borrow:0
+you can borrow 5more.
+Book list:
 DVD list:
 What would you like to do today?
 1: Borrow material

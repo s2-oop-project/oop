@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<string>
 #include<vector>
@@ -218,7 +219,7 @@ int main(){
                 }
             }
             
-            
+            //staff
             if (user_type==2){
                 DVD new_DVD;
                 Ebook new_ebook;

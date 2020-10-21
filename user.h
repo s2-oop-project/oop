@@ -37,6 +37,8 @@ public:
     int get_book_count();
     int get_DVD_count();
 
+    ~user();
+
     
 
 //atribute
@@ -71,8 +73,6 @@ public:
     staff();
     void test_use_staff_setup();
     void check_history(vector<Ebook> Ebook_list, vector<book> book_list, vector<DVD> DVD_list);
+    ~staff();
 };
 #endif
-
-
-

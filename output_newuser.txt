@@ -5,9 +5,23 @@ please choose your log in type
 2 staff log in
 3 new user? create account now!
 4 quit system.
+Welcome ! Please enter your name:
+Good morning Kayley,Please set your password:
+Successfully create account:
+user ID: 101
+user name: Kayley
+user password: 12345
+
+
+Welcome to the library!
+please choose your log in type
+1 user log in.
+2 staff log in
+3 new user? create account now!
+4 quit system.
 To login, please enter your ID:
 <cancel login enter -1>
-wai,please enter your password:
+Kayley,please enter your password:
 <enter -1 to quit login>
 sucessfully login.
 What would you like to do today?
@@ -60,10 +74,10 @@ DVD code    material situation    DVD in the library:
 30008         available             The Jungle Book
 30009         available             300
 Please enter the material code related to the one you want to borrow.
-sucessfully borrow book:
-material name    To Kill a Mockingbird
-author name      Harper Lee
-page number      345
+seccessfully borrow DVD 
+material name    The Lion King
+author name      Roger Allers
+Length of DVD      235 minutes
 What would you like to do today?
 1: Borrow material
 2: Return material
@@ -73,8 +87,29 @@ What would you like to do today?
 you have currently borrow:1
 you can borrow 4more.
 Book list:
-To Kill a Mockingbird
 DVD list:
+The Lion King
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: check your current borrow list
+-1: Quit account
+Which kind of material would you like to return?
+DVD (D)
+This is the list of DVD you borrow:
+1  The Lion King
+Enter the number of DVD you want to return :
+sucessfully return DVD:
+The Lion King
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: check your current borrow list
+-1: Quit account
+Enter your new password:
+Successfully change your password to : 123
 What would you like to do today?
 1: Borrow material
 2: Return material

@@ -7,14 +7,26 @@ please choose your log in type
 4 quit system.
 To login, please enter your ID:
 <cancel login enter -1>
-wai,please enter your password:
+staff number 200,please enter your password:
 <enter -1 to quit login>
 sucessfully login.
 What would you like to do today?
 1: Borrow material
 2: Return material
 3: Change current password.
-4: check your current borrow list
+4: Check History
+5: Add material
+6: check your current borrow list
+-1: Quit account
+Enter your new password:
+Successfully change your password to : 13579
+What would you like to do today?
+1: Borrow material
+2: Return material
+3: Change current password.
+4: Check History
+5: Add material
+6: check your current borrow list
 -1: Quit account
 This is the material list we have in the library:
 
@@ -60,26 +72,16 @@ DVD code    material situation    DVD in the library:
 30008         available             The Jungle Book
 30009         available             300
 Please enter the material code related to the one you want to borrow.
-sucessfully borrow book:
-material name    To Kill a Mockingbird
-author name      Harper Lee
-page number      345
+material name: The Lion King
+This is the people list who borrow this DVD before:
+___________________________________
 What would you like to do today?
 1: Borrow material
 2: Return material
 3: Change current password.
-4: check your current borrow list
--1: Quit account
-you have currently borrow:1
-you can borrow 4more.
-Book list:
-To Kill a Mockingbird
-DVD list:
-What would you like to do today?
-1: Borrow material
-2: Return material
-3: Change current password.
-4: check your current borrow list
+4: Check History
+5: Add material
+6: check your current borrow list
 -1: Quit account
 
 Welcome to the library!

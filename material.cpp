@@ -65,6 +65,10 @@ vector<string> material::get_borrow_user_list(){
     return borrow_user_list;
 }
 
+material::~material(){
+
+}
+
 
 
 
@@ -132,6 +136,10 @@ void Ebook::check_history(){
     cout<<"___________________________________"<<endl;
 }
 
+Ebook::~Ebook(){
+
+}
+
 
 
 
@@ -185,6 +193,10 @@ void book::check_history(){
     cout<<"___________________________________"<<endl;
 }
 
+book::~book(){
+
+}
+
 
 
 
@@ -235,4 +247,8 @@ void DVD::check_history(){
         cout<<borrow_user_list[i]<<endl;
     }
     cout<<"___________________________________"<<endl;
+}
+
+DVD::~DVD(){
+    
 }

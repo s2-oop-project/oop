@@ -271,5 +271,3 @@ int staff_log_in(vector<staff> staff_list){
 //
 //
 //}
-
-

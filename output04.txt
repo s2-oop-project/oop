@@ -31,4 +31,6 @@ please choose your log in type
 2 staff log in
 3 new user? create account now!
 4 quit system.
+user memory free
+staff memory free
 system off

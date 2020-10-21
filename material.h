@@ -34,6 +34,7 @@ public:
     string author_name;
     bool situation;
     vector<string> borrow_user_list;
+    ~material();
 };
 
 
@@ -57,6 +58,7 @@ public:
 
     int page_num;
     int download_count;
+    ~Ebook();
     
 };
 
@@ -73,6 +75,7 @@ public:
     void add_new_material();
     int get_page_num();
     void check_history();
+    ~book();
     
     int page_num;
 };
@@ -91,6 +94,7 @@ public:
     void set_length(int Len);
     int get_length();
     void check_history();
+    ~DVD();
     
     
     int length;
