@@ -64,6 +64,8 @@ int main(){
     while(user_num==0){
         cout<<endl;
         cout<<"Welcome to the library!"<<endl<<"please choose your log in type"<<endl<<"1 user log in."<<endl<<"2 staff log in"<<endl<<"3 new user? create account now!"<<endl<<"4 quit system."<<endl;
+        
+        //ignore unusable input
         while (true) {
           if (cin >>user_choose ) {
 
@@ -89,7 +91,9 @@ int main(){
         
         
         cin.ignore();
-        //different behavior of log in
+        //different behavior log in,staff , creat account
+
+        //login
         if(user_choose ==1){
             
             current_user_index=log_in(user_list);
@@ -99,7 +103,9 @@ int main(){
             }else{
             user_type = 1;
             }
-        }else if(user_choose == 2){
+        }
+        //staff login
+        else if(user_choose == 2){
             current_staff_index=staff_log_in(staff_list);
             if(current_staff_index==-1){
                 user_num=0;
@@ -107,16 +113,33 @@ int main(){
             }else{
             user_type = 2;
             }
-        }else if (user_choose == 3){
+        }
+        // create account
+        else if (user_choose == 3){
             current_user_index=user_list.size()+1;
             current_user.set_up_account();
             user_list.push_back(current_user);
             user_num=0;
             user_type=0;
         }else{
+            //system off
             user_num=-1;
             user_type=0;
+            
+            //free memory
+            for (int i=0;i<user_list.size();i++){
+                delete [] user_list[i].mybook;
+                delete [] user_list[i].myDVD;
+            }
+            cout<<"user memory free"<<endl;
+            for(int i=0;i<staff_list.size();i++){
+                delete [] staff_list[i].mybook;
+                delete [] staff_list[i].myDVD;
+            }
+            cout<<"staff memory free"<<endl;
+            
             cout<<"system off"<<endl;
+            
         }
         
         
