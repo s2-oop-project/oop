@@ -156,7 +156,7 @@ int find_staff_ID(vector<staff> staff_list){
 
 int staff_check_password(int staff_index,vector<staff> staff_list){
     string staff_input_password;
-    cout<<"staff number "<<staff_list[staff_index].get_user_name()<<",please enter your password:"<<endl;
+    cout<<"staff number "<<staff_list[staff_index].get_user_ID()<<",please enter your password:"<<endl;
     cout<<"<enter -1 to quit login>"<<endl;
     while(true){
         if(cin>>staff_input_password){

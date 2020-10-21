@@ -60,8 +60,8 @@ protected:
     static int staff_ID;
     int user_ID;
     string user_password;
+private:
     string user_name;
-    
 };
 
 

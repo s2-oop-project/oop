@@ -259,7 +259,6 @@ void staff::test_use_staff_setup(){
     DVD_count=0;
     mybook = new book [maximum_borrow];
     myDVD = new DVD [maximum_borrow];
-    user_name=to_string(user_ID);
     user_password="123456";
 }
 
